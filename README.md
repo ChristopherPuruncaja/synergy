@@ -1,96 +1,75 @@
-<p align="center"><img src="https://i.imgur.com/DIpuNTI.jpg"></p>
+<p align="center"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsWESkUMmFtbO3AtqDZNfSEn4kSaH6z4eEzg&s"></p>
 
-<p align="center">
-    <a href="https://twitter.com/thewhiteh4t">
-      <img src="https://img.shields.io/badge/-TWITTER-black?logo=twitter&style=for-the-badge">
-    </a>
-    &nbsp;
-    <a href="https://twc1rcle.com/">
-      <img src="https://img.shields.io/badge/-THE WHITE CIRCLE-black?logo=&style=for-the-badge">
-    </a>
-    &nbsp;
-    <a href="https://thewhiteh4t.github.io/">
-      <img src="https://img.shields.io/badge/-BLOG-black?logo=dialogflow&style=for-the-badge">
-    </a>
-</p>
 
 <p align="center">
   <br>
   <b>Available in</b>
   <br>
-  <img src="https://i.imgur.com/1wJVDV5.png">
+  <img src="[https://i.imgur.com/1wJVDV5.png](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsWESkUMmFtbO3AtqDZNfSEn4kSaH6z4eEzg&s)">
 </p>
 
-<p>
-  <a style="margin-right: 10px;" href="https://github.com/thewhiteh4t/seeker#installation">
-    <img src="https://dabuttonfactory.com/button.png?t=INSTALL&f=Open+Sans&ts=15&tc=000&hp=25&vp=10&c=5&bgt=unicolored&bgc=00e2ff">
-  </a>
-  <a style="margin-right: 10px;" href="https://github.com/thewhiteh4t/seeker#usage">
-    <img src="https://dabuttonfactory.com/button.png?t=USAGE&f=Open+Sans&ts=15&tc=000&hp=25&vp=10&c=5&bgt=unicolored&bgc=00e2ff">
-  </a>
-  <a href="https://github.com/thewhiteh4t/seeker#demo">
-    <img src="https://dabuttonfactory.com/button.png?t=DEMO&f=Open+Sans&ts=15&tc=000&hp=25&vp=10&c=5&bgt=unicolored&bgc=00e2ff">
-  </a>
-</p>
 
-Concept behind Seeker is simple, just like we host phishing pages to get credentials why not host a fake page that requests your location like many popular location based websites. Read more on <a href="https://thewhiteh4t.github.io"> thewhiteh4t's Blog </a>.Seeker Hosts a fake website which asks for Location Permission and if the target allows it, we can get :
 
-* Longitude
-* Latitude
-* Accuracy
-* Altitude - Not always available
-* Direction - Only available if user is moving
-* Speed - Only available if user is moving
+El concepto detrás de Seeker es simple: al igual que alojamos páginas de phishing para obtener credenciales, ¿por qué no alojar una página falsa que solicite tu ubicación, como hacen muchos sitios web populares basados ​​en la ubicación? Lee más en el blog de thewhiteh4t (<a href="https://thewhiteh4t.github.io">). Seeker aloja un sitio web falso que solicita permiso de ubicación. Si el objetivo lo permite, podemos obtener:
 
-Along with Location Information we also get **Device Information** without any permissions :
+* Longitud
+* Latitud
+* Precisión
+* Altitud (no siempre disponible)
+* Dirección (solo disponible si el usuario se mueve)
+* Velocidad (solo disponible si el usuario se mueve)
 
-* Unique ID using Canvas Fingerprinting
-* Device Model - Not always available
-* Operating System
-* Platform
-* Number of CPU Cores - Approximate Results
-* Amount of RAM - Approximate Results
-* Screen Resolution
-* GPU information
-* Browser Name and Version
-* Public IP Address
-* Local IP Address
-* Local Port
+Además de la información de ubicación, también obtenemos **Información del dispositivo** sin necesidad de permisos:
 
-**Automatic IP Address Reconnaissance** is performed after the above information is received.
+* ID único mediante huella digital Canvas
+* Modelo del dispositivo (no siempre disponible)
+* Sistema operativo
+* Plataforma
+* Número de núcleos de CPU (resultados aproximados)
+* Cantidad de RAM (resultados aproximados)
+* Resolución de pantalla
+* Información de la GPU
+* Nombre y versión del navegador
+* Dirección IP pública
+* Dirección IP local
+* Puerto local
 
-**This tool is a Proof of Concept and is for Educational Purposes Only, Seeker shows what data a malicious website can gather about you and your devices and why you should not click on random links and allow critical permissions such as Location etc.**
+Tras recibir la información anterior, se realiza un **reconocimiento automático de la dirección IP**.
 
-## How is this Different from IP GeoLocation
+**Esta herramienta es una prueba de concepto y tiene fines exclusivamente educativos. Seeker muestra qué datos puede recopilar un sitio web malicioso sobre usted y sus dispositivos, y por qué no debe hacer clic en enlaces aleatorios ni otorgar permisos críticos como la ubicación, etc.**
 
-* Other tools and services offer IP Geolocation which is NOT accurate at all and does not give location of the target instead it is the approximate location of the ISP.
+## ¿En qué se diferencia de la geolocalización por IP?
 
-* Seeker uses HTML API and gets Location Permission and then grabs Longitude and Latitude using GPS Hardware which is present in the device, so Seeker works best with Smartphones, if the GPS Hardware is not present, such as on a Laptop, Seeker fallbacks to IP Geolocation or it will look for Cached Coordinates.  
+* Otras herramientas y servicios ofrecen geolocalización por IP, la cual no es precisa y no proporciona la ubicación del objetivo, sino la ubicación aproximada del proveedor de servicios de internet (ISP).
 
-* Generally if a user accepts location permsission, Accuracy of the information recieved is **accurate to approximately 30 meters**
+* Seeker utiliza la API HTML, obtiene el permiso de ubicación y luego captura la longitud y latitud mediante el hardware GPS del dispositivo. Por lo tanto, Seeker funciona mejor con teléfonos inteligentes. Si el hardware GPS no está presente, como en una computadora portátil, Seeker recurre a la geolocalización por IP o busca coordenadas almacenadas en caché.
 
-* Accuracy depends on multiple factors which you may or may not control such as :
-  * Device - Won't work on laptops or phones which have broken GPS
-  * Browser - Some browsers block javascripts
-  * GPS Calibration - If GPS is not calibrated you may get inaccurate results and this is very common
+* Generalmente, si un usuario acepta el permiso de ubicación, la precisión de la información recibida es de aproximadamente 30 metros.
 
-## Templates
+* La precisión depende de varios factores que usted puede o no controlar, como:
 
-Available Templates : 
+* Dispositivo: No funciona en portátiles ni teléfonos con GPS averiado.
+
+* Navegador: Algunos navegadores bloquean JavaScript.
+
+* Calibración del GPS: Si el GPS no está calibrado, puede obtener resultados inexactos, lo cual es muy común.
+
+## Plantillas
+
+Plantillas disponibles:
 
 * NearYou
-* Google Drive (Suggested by @Akaal_no_one)
-* WhatsApp (Suggested by @Dazmed707)
+* Google Drive (Sugerida por @Akaal_no_one)
+* WhatsApp (Sugerida por @Dazmed707)
 * Telegram
-* Zoom (Made by @a7maadf)
-* Google reCAPTCHA (Made by @MrEgyptian)
+* Zoom (Creada por @a7maadf)
+* Google reCAPTCHA (Creada por @MrEgyptian)
 
-Create your own template ! 
-Steps to let you create your template is described in this [how-to](./createTemplate.md)
+¡Crea tu propia plantilla! Los pasos para crear tu plantilla se describen en este [how-to](./createTemplate.md).
 
-Once your template is ready, **do not forget to propose it to the community via a PR (pull request)**
+Una vez que tu plantilla esté lista, **no olvides proponerla a la comunidad mediante una solicitud de extracción (pull request)**.
 
-## Tested On :
+## Probado en:
 
 * Kali Linux
 * BlackArch Linux
@@ -106,8 +85,8 @@ Once your template is ready, **do not forget to propose it to the community via 
 ### Kali Linux / Arch Linux / Ubuntu / Fedora / Parrot OS / Termux
 
 ```bash
-git clone https://github.com/thewhiteh4t/seeker.git
-cd seeker/
+git clone https://github.com/ChristopherPuruncaja/synergy.git
+cd synergy/
 chmod +x install.sh
 ./install.sh
 ```
