@@ -3,14 +3,13 @@
 
 <p align="center">
   <br>
-  <b>Available in</b>
+  
   <br>
   <img src="[https://i.imgur.com/1wJVDV5.png](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsWESkUMmFtbO3AtqDZNfSEn4kSaH6z4eEzg&s)">
 </p>
 
 
-
-El concepto detrás de Seeker es simple: al igual que alojamos páginas de phishing para obtener credenciales, ¿por qué no alojar una página falsa que solicite tu ubicación, como hacen muchos sitios web populares basados ​​en la ubicación? Lee más en el blog de thewhiteh4t (<a href="https://thewhiteh4t.github.io">). Seeker aloja un sitio web falso que solicita permiso de ubicación. Si el objetivo lo permite, podemos obtener:
+El concepto detrás de SYNERGY es simple: al igual que alojamos páginas de phishing para obtener credenciales, ¿por qué no alojar una página falsa que solicite tu ubicación, como hacen muchos sitios web populares basados ​​en la ubicación?, La herrramienta muestra una prueba de como se realiza el robo de informacion, aloja un sitio web falso que solicita permiso de ubicación. Si el objetivo lo permite, podemos obtener:
 
 * Longitud
 * Latitud
