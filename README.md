@@ -35,13 +35,13 @@ Además de la información de ubicación, también obtenemos **Información del 
 
 Tras recibir la información anterior, se realiza un **reconocimiento automático de la dirección IP**.
 
-**Esta herramienta es una prueba de concepto y tiene fines exclusivamente educativos. Seeker muestra qué datos puede recopilar un sitio web malicioso sobre usted y sus dispositivos, y por qué no debe hacer clic en enlaces aleatorios ni otorgar permisos críticos como la ubicación, etc.**
+**Esta herramienta es una prueba de concepto y tiene fines exclusivamente educativos. Synergy muestra qué datos puede recopilar un sitio web malicioso sobre usted y sus dispositivos, y por qué no debe hacer clic en enlaces aleatorios ni otorgar permisos críticos como la ubicación, etc.**
 
 ## ¿En qué se diferencia de la geolocalización por IP?
 
 * Otras herramientas y servicios ofrecen geolocalización por IP, la cual no es precisa y no proporciona la ubicación del objetivo, sino la ubicación aproximada del proveedor de servicios de internet (ISP).
 
-* Seeker utiliza la API HTML, obtiene el permiso de ubicación y luego captura la longitud y latitud mediante el hardware GPS del dispositivo. Por lo tanto, Seeker funciona mejor con teléfonos inteligentes. Si el hardware GPS no está presente, como en una computadora portátil, Seeker recurre a la geolocalización por IP o busca coordenadas almacenadas en caché.
+* Synergy utiliza la API HTML, obtiene el permiso de ubicación y luego captura la longitud y latitud mediante el hardware GPS del dispositivo. Por lo tanto, Synergy funciona mejor con teléfonos inteligentes. Si el hardware GPS no está presente, como en una computadora portátil, Synergy recurre a la geolocalización por IP o busca coordenadas almacenadas en caché.
 
 * Generalmente, si un usuario acepta el permiso de ubicación, la precisión de la información recibida es de aproximadamente 30 metros.
 
@@ -93,20 +93,20 @@ chmod +x install.sh
 ### BlackArch Linux
 
 ```bash
-sudo pacman -S seeker
+sudo pacman -S synergy
 ```
 
 ### Docker
 
 ```bash
-docker pull thewhiteh4t/seeker
+docker pull thewhiteh4t/synergy
 ```
 
 ### OSX
 ```bash
-git clone https://github.com/thewhiteh4t/seeker.git
-cd seeker/
-python3 seeker.py
+git clone https://github.com/ChristopherPuruncaja/synergy.git
+cd synergy/
+python3 synergy.py
 ````
 
 In order to run in tunnel mode, install ngrok by running this command in the terminal:
@@ -119,9 +119,9 @@ ngrok http 8080
 ## Usage
 
 ```bash
-python3 seeker.py -h
+python3 synergy.py -h
 
-usage: seeker.py [-h] [-k KML] [-p PORT] [-u] [-v] [-t TEMPLATE] [-d] [--telegram token:chatId] [--webhook WEBHOOK]
+usage: synergy.py [-h] [-k KML] [-p PORT] [-u] [-v] [-t TEMPLATE] [-d] [--telegram token:chatId] [--webhook WEBHOOK]
 
 options:
   -h, --help                            show this help message and exit
